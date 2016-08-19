@@ -1,0 +1,5 @@
+escape ``
+multiuser on
+acladd kaminski
+scrollback 1000
+startup_message off
