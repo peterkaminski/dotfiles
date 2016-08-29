@@ -2,4 +2,5 @@ escape ``
 multiuser on
 acladd kaminski
 defscrollback 1000
+defflow off
 startup_message off
