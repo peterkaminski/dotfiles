@@ -1,0 +1,5 @@
+[user]
+        name = Peter Kaminski
+        email = kaminski@istori.com
+[push]
+        default = simple
