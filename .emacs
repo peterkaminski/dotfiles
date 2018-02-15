@@ -19,3 +19,14 @@
          (linum-format (concat "%" (number-to-string w) "d ")))
     ad-do-it))
 (global-linum-mode 1)
+
+;; Excerpted from https://github.com/nileshk/emacs/blob/master/startup.el
+;; Turn off the default backup behaviour
+;; Instead, save backups to ~/.emacs.d/backup (creating folder if necessary)
+(let ((backup-dir "~/.emacs.d/backup"))
+  '(progn
+     (if (not (file-directory-p backup-dir))
+	 '(progn
+	    (message (concat "Creating directory: " backup-dir))
+	    (make-directory backup-dir))))
+  (setq backup-directory-alist '(("." . "~/.emacs.d/backup"))))
